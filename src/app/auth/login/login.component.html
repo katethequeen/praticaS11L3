@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Login</h1>
+
+  <form>
+    <input
+      type="email"
+      class="form-control mb-3"
+      name="email"
+      placeholder="email"
+      [(ngModel)]="formData.email"
+    />
+    <input
+      type="password"
+      class="form-control mb-3"
+      name="password"
+      placeholder="password"
+      [(ngModel)]="formData.password"
+    />
+    <button (click)="accedi()" class="btn btn-outline-info">Accedi</button>
+  </form>
+</div>
